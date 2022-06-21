@@ -96,7 +96,7 @@ def user_login():
                 access_token = jwt.encode(
                     {
                         "user": {
-                            "id": find_db_user['_id'],
+                            # "id": find_db_user['_id'],
                             "email": find_db_user['email'],
                             "first_name": find_db_user['first_name'],
                             "last_name": find_db_user['last_name'],
