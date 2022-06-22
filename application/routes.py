@@ -120,7 +120,6 @@ def user_login():
             "message": "The username or password is incorrect"
         }), 401
     except:
-        print(sys.exc_info())
         abort(400)
 
 
@@ -215,6 +214,5 @@ def delete_template(template_id):
                 "statusCode": 200,
                 "message": "Template deleted successfully",
             }), 200
-    except: 
-        print(sys.exc_info())
+    except:
         abort(404)
